@@ -1,10 +1,12 @@
 package main
 
-import ("fmt"
-		"math")
+import (
+	"fmt"
+	"math"
+)
 
 type Shape interface {
-	area() float64 
+	area() float64
 }
 
 type Circle struct {
@@ -27,7 +29,7 @@ func getArea(s Shape) float64 {
 	return s.area()
 }
 
-func main()  {
+func main() {
 	//INTERFACES
 	fmt.Println("interfaces")
 	circle1 := Circle{x: 0, y: 0, radius: 5}
